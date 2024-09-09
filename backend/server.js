@@ -10,7 +10,7 @@ const port = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/task-mean-project', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/task-mean-project', {});
 
 app.use('/api', apiRoutes);
 

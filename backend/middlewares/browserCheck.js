@@ -3,7 +3,7 @@ const Response = require('../utils/response');
 
 function browserCheck(req, res, next) {
 
-	const browserInfo = req.body.browserInfo || (req.headers['browser-name'] && req.headers['browser-version']);
+	const browserInfo = req.body.browserInfo;
 	if (browserInfo && browserInfo.name && browserInfo.version) {
 		next();
 	} else {
